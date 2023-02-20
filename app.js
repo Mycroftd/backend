@@ -115,5 +115,6 @@ server.on("upgrade", function upgrade(request, socket, head) {
   }
 });
 
-server.listen(process.env.PORT);
+const PORT = process.env.PORT || 3000;
+server.listen(PORT);
 console.log("wss up");
